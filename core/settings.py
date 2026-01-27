@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     'accounts',
     'courses',
+
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
