@@ -9,4 +9,5 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
     
+    path('', include('courses.urls')),
 ]
