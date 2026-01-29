@@ -1,0 +1,13 @@
+<h2>Available Courses</h2>
+
+{% for course in courses %}
+  <div>
+    <h3>{{ course.title }}</h3>
+    <p>{{ course.description }}</p>
+
+    <form method="post" action="{% url 'enroll_course' course.id %}">
+      {% csrf_token %}
+      <button type="submit">Enroll</button>
+    </form>
+  </div>
+{% endfor %}
