@@ -8,7 +8,7 @@ class CourseSerializer(serializers.ModelSerializer):
 
 
 class EnrollmentSerializer(serializers.ModelSerializer):
-    course_title = serializers.ReadOnlyField(sourse='course.title')
+    course_title = serializers.ReadOnlyField(source='course.title')
 
     class Meta:
         model = Enrollment

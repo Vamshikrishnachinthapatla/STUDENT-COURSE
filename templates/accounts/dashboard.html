@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>DASHBOARD</title>
+    </head>
+
+    <body>
+        <h2>Welcome to DASHBOARD</h2>
+
+        <p>Hello, {{ request.user.name }}</p>
+
+        <a href="{% url 'logout' %}">Logout</a>
+
+    </body>
+    </html>
